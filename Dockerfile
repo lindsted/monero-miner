@@ -8,8 +8,8 @@ RUN useradd -ms /bin/bash monero
 USER monero
 WORKDIR /home/monero
 
-RUN git clone https://github.com/xmrig/xmrig.git &&\
-  cd xmrig &&\
+RUN git clone https://github.com/xmrig/xmrig.git xmrig-src &&\
+  cd xmrig-src &&\
   mkdir build &&\
   cd build &&\
   sed -i 's/ = 5;/= 0;/g' ../src/donate.h &&\
