@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-RUN apt-get -v update && apt-get -y install git build-essential cmake libuv1-dev libmicrohttpd-dev
+RUN apt-get -y update && apt-get -y install git build-essential cmake libuv1-dev libmicrohttpd-dev
 
 ENV XMRIG_VERSION=2.6.4 XMRIG_SHA256=34d390a499d2098bce92e6b85b4858ee6255a7e2d4e03197ba4f6a759efe349c
 
