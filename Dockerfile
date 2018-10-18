@@ -6,6 +6,7 @@ RUN useradd -ms /bin/bash monero
 USER monero
 WORKDIR /home/monero
 
+
 RUN git clone https://github.com/xmrig/xmrig.git xmrig-src &&\
   cd xmrig-src &&\
   mkdir build &&\
