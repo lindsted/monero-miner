@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-RUN apt-get -y update && apt-get -y install git build-essential cmake libuv1-dev libmicrohttpd-dev
+RUN apt-get -y update && apt-get -y install git build-essential cmake libuv1-dev libmicrohttpd-dev openssl
 
 RUN useradd -ms /bin/bash monero
 USER monero
